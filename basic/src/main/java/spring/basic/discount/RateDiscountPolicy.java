@@ -8,7 +8,7 @@ import spring.basic.member.Member;
 
 @Component
 //@Primary // 우선수위를 가짐.
-@MainDiscountPolicy
+//@MainDiscountPolicy
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
