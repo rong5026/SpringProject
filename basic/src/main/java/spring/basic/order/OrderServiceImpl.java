@@ -1,5 +1,6 @@
 package spring.basic.order;
 
+import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import spring.basic.discount.DiscountPolicy;
@@ -10,6 +11,7 @@ import spring.basic.member.MemberRepository;
 import spring.basic.member.MemoryMemberRepository;
 
 @Component
+//@RequiredArgsConstructor  // final이 붙은걸로 생성자를 만들어줌
 public class OrderServiceImpl implements OrderService {
 
     private final MemberRepository memberRepository;

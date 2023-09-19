@@ -1,10 +1,12 @@
 package spring.basic.discount;
 
+import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Component;
 import spring.basic.member.Grade;
 import spring.basic.member.Member;
 
-//@Component
+@Component
+@Primary // 우선수위를 가짐.
 public class RateDiscountPolicy implements DiscountPolicy{
 
     private int discountPercent = 10;
